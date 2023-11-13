@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+        </script>
 </head>
 <body>
     <button onclick="document.getElementById('myImage').src='sliate1.jpg'">Press Picture one</button>
@@ -12,6 +17,7 @@
 
 <button onclick="document.getElementById('myImage').src='sli2.jpg'">Press Picture two</button>
 
-
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
 </body>
 </html>
