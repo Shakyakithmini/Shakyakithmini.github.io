@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        function myFunction() {
-          document.getElementById("demo").innerHTML = "Paragraph changed.";
-        }
-        </script>
-    <style>
-     
-.button {border-radius: 3px;}
-        #grad1 {
-          height: 950px;
-          background-color: rgb(170, 255, 0); /* For browsers that do not support gradients */
-          background-image: linear-gradient(to right, rgb(0, 217, 255) , yellow);
-        }
-        body {
-        background-color: rgb(211, 211, 211);
-        width: 1000px;
-        height: 1000px;
-        border: 25px solid rgba(0, 109, 105, 0.906);
-        padding: 50px;
-        margin-left: 60px;
-        margin-right: 60px;
-        margin-bottom: 50px;
-        margin-top: 40px;
-    
-      }
- 
-        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script>
+  <style>
+    .button {
+      border-radius: 3px;
+    }
+
+    #grad1 {
+      height: 950px;
+      background-color: rgb(170, 255, 0);
+      /* For browsers that do not support gradients */
+      background-image: linear-gradient(to right, rgb(0, 217, 255), yellow);
+    }
+
+    body {
+      background-color: rgb(211, 211, 211);
+      width: 1000px;
+      height: 1000px;
+      border: 25px solid rgba(0, 109, 105, 0.906);
+      padding: 50px;
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-bottom: 50px;
+      margin-top: 40px;
+
+    }
+  </style>
 </head>
+
 <body>
-    <center><h1 style="border:2px solid rgb(132, 71, 255);">Hello Java Script !!!</h1>
+  <center>
+    <h1 style="border:2px solid rgb(132, 71, 255);">Hello Java Script !!!</h1>
     <div id="grad1">
-       <h1> <p id="demo">A Paragraph.</p>
+      <h1>
+        <p id="demo">A Paragraph.</p>
         <button style="width: 70px; height: 60px; color: rgb(239, 239, 244); border-radius: 20px; border-color: rgb(253, 243, 248);background-color: rgb(0, 89, 111);
-        font-weight: bold;" 
-   <button type="button" onclick="myFunction()" >Try it</h1><br>
-    
-    
-    
-    <h2><p id="demo">What's the time ? Please</p></h2>
-    <button style="width: 150px; height: 70px; color: rgb(239, 239, 244); border-radius: 10px; border-color: rgb(253, 243, 248);background-color: rgb(0, 41, 111);
-    font-weight: bold;" 
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
- Display Date and Time.</button>
- <br>
-
-
-<br>
+        font-weight: bold;" <button type="button" onclick="myFunction()">Try it
+      </h1><br>
 
 
 
-<center>
-<button style="width: 80px; height: 60px; color: rgb(239, 239, 244); border-radius: 30px; border-color: rgb(253, 243, 248);background-color: rgb(23, 21, 15);
-font-weight: bold;" 
-<button onclick="document.getElementById('myImage').src='download (1).jpeg'">Press 01</button>
+      <h2>
+        <p id="demo">What's the time ? Please</p>
+      </h2>
+      <button style="width: 150px; height: 70px; color: rgb(239, 239, 244); border-radius: 10px; border-color: rgb(253, 243, 248);background-color: rgb(0, 41, 111);
+    font-weight: bold;" <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Display Date and Time.</button>
+      <br>
+      <br>
 
-<img id="myImage" src="images (3).jpeg" width="300px" height="350px" >
-<button style="width: 80px; height: 60px; color: rgb(239, 239, 244); border-radius: 30px; border-color: rgb(253, 243, 248);background-color: rgb(23, 21, 15);
-font-weight: bold;" 
-<button onclick="document.getElementById('myImage').src='images.jpeg'">Press 02</button></center>
 
-   <hr size="5px;" color="blue">
-  <h1>The window</h1>
 
-  <p>Print the current page.</p>
-  <button style="width: 120px; height: 50px; color: rgb(13, 13, 14); border-radius: 30px; border-color: rgb(27, 0, 13);background-color: rgb(231, 240, 245);
-font-weight:bold;" 
-  <button onclick="window.print()">Print this page</button>
-   
-  </div> 
+      <center>
+        <button style="width: 80px; height: 60px; color: rgb(239, 239, 244); border-radius: 30px; border-color: rgb(253, 243, 248);background-color: rgb(23, 21, 15);
+font-weight: bold;" <button onclick="document.getElementById('myImage').src='download (1).jpeg'">Press 01</button>
+
+        <img id="myImage" src="images (3).jpeg" width="300px" height="350px">
+        <button style="width: 80px; height: 60px; color: rgb(239, 239, 244); border-radius: 30px; border-color: rgb(253, 243, 248);background-color: rgb(23, 21, 15);
+font-weight: bold;" <button onclick="document.getElementById('myImage').src='images.jpeg'">Press 02</button>
+      </center>
+
+      <hr size="5px;" color="blue">
+      <h1>The window</h1>
+
+      <p>Print the current page.</p>
+      <button style="width: 120px; height: 50px; color: rgb(13, 13, 14); border-radius: 30px; border-color: rgb(37, 4, 20);background-color: rgb(231, 240, 245);
+font-weight:bold;" <button onclick="window.print()">Print this page</button>
+
+    </div>
 </body>
+
 </html>
