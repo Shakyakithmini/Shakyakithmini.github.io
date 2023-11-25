@@ -19,6 +19,37 @@
       margin-top: 40px;
 
     }
+    * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 800px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .divright1 {
+    border: 5px outset red;
+    background-color: rgb(149, 223, 248);    
+    text-align: center;
+  }
+  .divright2 {
+    border: 4px outset rgb(14, 8, 8);
+    background-color: rgb(8, 180, 238);    
+    text-align: center;
+  }
+  .row{
+    text-align: center;
+    
   </style>
   <script>
     function myFunction() {
@@ -60,24 +91,13 @@
 
 
   </script>
-  <style>
-  .myDiv {
-    border: 5px outset red;
-    background-color: rgb(149, 223, 248);    
-    text-align: center;
-  }
-  .myDiv1 {
-    border: 4px outset rgb(14, 8, 8);
-    background-color: rgb(8, 180, 238);    
-    text-align: center;
-  }
-</style>
+  
 </head>
 
 
 <body>
   
-    <div class="myDiv">
+    <div class="divright1">
     <h1>JavaScript Statements</h1>
 
     <p>JavaScript code blocks </p>
@@ -97,7 +117,7 @@
     <p id="demo2"></p>
     </div><br><br>
   
-  <div class="myDiv1">
+  <div class="divright2">
   <h1>JavaScript Variables<br>Addition</h1>
 
   <p>x, y, and z are variables.</p>
@@ -143,6 +163,13 @@
   <button style="width: 100px;height: 30px;border-radius: 10px; border-color: brown;background-color: bisque;"
 
   <button type="button" onclick="demo7()">Division</button>
+  </div>
+ 
+  <div class="row" style="background-color:yellow;">
+
+  
+ 
+  </div>
 
 
 

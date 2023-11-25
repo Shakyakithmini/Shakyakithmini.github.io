@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercies_03</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 800px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+</head>
+<body>
+  
+    <div class="row">
+      <div class="column" style="background-color:#20d5f5;">
+       <center><h1><p>Array</p></center> 
+       <p id="demo"></p>
+
+       <script>
+       const names = ["01.Names","Shakya", "Kithmini", "Hasangana"];
+       document.getElementById("demo").innerHTML = names;
+       </script>
+       <h2>Looping an Array</h2>
+       <p id="demo1"></p>
+       
+       <script>
+       const fruits = ["Banana", "Orange", "Apple", "Mango"];
+       let fLen = fruits.length;
+       
+       let text = "<ul>";
+       for (let i = 0; i < fLen; i++) {
+         text += "<li>" + fruits[i] + "</li>";
+       }
+       text += "</ul>";
+       
+       document.getElementById("demo1").innerHTML = text;
+       </script>
+       <h2>Associative Array</h2>
+<p id="demo2"></p>
+
+<script>
+const person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46; 
+document.getElementById("demo2").innerHTML =
+person[0] + " " + person.length;
+</script>
+<center><h1>Array Methods</h1>
+    <h2>Array length
+    Array toString()
+    Array pop()
+    Array push()
+    Array shift()
+    Array unshift()
+    Array join()
+    Array delete()
+    Array concat()
+    Array flat()
+    Array splice()
+    Array slice()</p></h2></center>
+    <hr size="5" color="black">
+    
+<center><h1>JavaScript Functions</h1>
+
+    <p>function toCelsius(f) 
+        return (5/9) * (f-32)<br>let value = toCelsius(50);
+        document.getElementById("demo").innerHTML = value</p>
+        <p id="demo3"></p>
+
+        <script>
+        function toCelsius(f) {
+          return (5/9) * (f-32);
+        }
+        
+        let value = toCelsius(77);
+        document.getElementById("demo3").innerHTML = value;
+        </script>
+      </div>
+   
+
+      <div class="column" style="background-color:yellow;">
+      
+      </div>
+    </div> 
+</body>
+</html>
